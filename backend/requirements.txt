@@ -8,3 +8,4 @@ bcrypt
 python-jose
 pymysql
 cryptography
+langchain
