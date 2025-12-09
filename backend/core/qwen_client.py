@@ -27,7 +27,7 @@ class QwenStyleService:
         load_dotenv(override=True)
         
         # URL 로드 (기본값 설정)
-        self.base_url = os.getenv("KAMP_QWEN_URL", "https://rbpaa-125-6-60-4.a.free.pinggy.link/v1")
+        self.base_url = os.getenv("KAMP_QWEN_URL", "https://yojgf-125-6-60-4.a.free.pinggy.link/v1")
         
         # URL 보정: /chat/completions가 붙어있으면 떼어냄
         if "/chat/completions" in self.base_url:

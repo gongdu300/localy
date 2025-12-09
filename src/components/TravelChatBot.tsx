@@ -95,6 +95,7 @@ export function TravelChatBot({ character, onClose, onComplete }: TravelChatBotP
             console.log('✅ Response complete:', fullText);
             // 완료 시 스트리밍 리셋
             setStreamingResponse('');
+            setIsLoading(false);
         },
         onError: (error) => {
             console.error('❌ Error:', error);

@@ -5,7 +5,7 @@ from ..state import TravelAgentState
 
 
 # 엉뚱수달 서버 설정
-KKACHIL_SERVER = "https://nmpqo-125-6-60-4.a.free.pinggy.link/v1"
+KKACHIL_SERVER = "https://yojgf-125-6-60-4.a.free.pinggy.link/v1"
 KKACHIL_MODEL = "/home/kampuser/notebooks/models/eongddong-otter-merged"  # 엉뚱수달 모델
 
 KKACHIL_SYSTEM_PROMPT = """너의 이름은 엉뚱수달이고 귀엽고 활발한 성격의 수달이며 여행을 도와주는 도우미야.
