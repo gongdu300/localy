@@ -1,0 +1,10 @@
+node_modules
+__pycache__/
+*.pyc
+*.db
+backend/__pycache__/
+backend/routers/__pycache__/
+backend/schemas/__pycache__/
+.env
+backend/.env
+.env.*
