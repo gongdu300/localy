@@ -29,3 +29,27 @@ class UserResponse(BaseModel):
     
     class Config:
         from_attributes = True
+
+# Parse Answer API 스키마
+class ParseAnswerRequest(BaseModel):
+    question_type: str
+    user_input: str
+
+class ParseAnswerResponse(BaseModel):
+    success: bool
+    parsed_text: str
+
+# Analyze Persona API 스키마
+class AnalyzePersonaRequest(BaseModel):
+    user_id: str
+    planning: str
+    social: str
+    detail_focus: str
+    decision_style: str
+    energy_source: str
+    preparation: str
+
+class AnalyzePersonaResponse(BaseModel):
+    character: str  # "cat" | "dog" | "otter"
+    mbti_traits: dict
+    reason: str

@@ -6,7 +6,7 @@ import os
 # .env 파일에서 환경 변수 로드
 load_dotenv()
 
-from routers import auth, langgraph, persona, websocket_chat, accommodation  # WebSocket, Accommodation 추가
+from routers import auth, langgraph, persona, websocket_chat, accommodation, api_router  # API 라우터 추가
 from core.database import engine, Base  # 1. engine과 Base 가져오기
 
 # 2. 서버 시작 때 테이블 생성 (없으면 만들고, 있으면 넘어감)
@@ -72,6 +72,7 @@ app.include_router(langgraph.router)  # LangGraph ReAct Agent 라우터 등록
 app.include_router(persona.router)  # Persona 분석 라우터 등록
 app.include_router(accommodation.router)  # Accommodation Agent 라우터 등록
 app.include_router(websocket_chat.router)  # WebSocket 실시간 챗 라우터 등록
+app.include_router(api_router.router)  # API 라우터 등록 (/api/parse-answer, /api/analyze-persona)
 
 
 
